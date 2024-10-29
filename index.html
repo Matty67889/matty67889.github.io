@@ -17,11 +17,17 @@
             Matthew
           </a>
         </div>
-        <div>
-          <button type="button" class="hamburger-btn" onclick="toggleNavVisibility()">Hamburger</button>
+        <div class="ham-btn-container">
+          <button type="button" id="ham-btn" class="hamburger-btn" onclick="toggleNavVisibility()">
+            <div class="hamburger-ingredient-container">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
         </div>
       </div>
-      <div id="nav-links">
+      <div id="nav-links-container">
         <menu class="row-narrow">
           <li>
             <a href="index.html" class="nav-link">Home</a>

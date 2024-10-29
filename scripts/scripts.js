@@ -1,10 +1,9 @@
-const navLinks = document.getElementById("nav-links");
+const navLinksCont = document.getElementById("nav-links-container");
 
 function toggleNavVisibility() {
-  console.log("Hello");
-  if (navLinks.classList.contains("hidden")) {
-    navLinks.classList.remove("hidden");
+  if (navLinksCont.classList.contains("hidden")) {
+    navLinksCont.classList.remove("hidden");
   } else {
-    navLinks.classList.add("hidden");
+    navLinksCont.classList.add("hidden");
   }
 }

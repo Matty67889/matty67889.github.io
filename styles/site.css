@@ -10,7 +10,7 @@
   --text-font-size: 14pt;
   --primary-color: #111215;
   --text-color: white;
-  /* --hover-text-color: blue; */
+  --hover-text-color: rgb(68, 229, 213);
 }
 
 /* General styles */
@@ -40,6 +40,7 @@ nav menu {
 
 nav menu li {
   list-style-type: none;
+  /* border: 1px solid pink; */
 }
 
 /* Layout classes */
@@ -59,24 +60,69 @@ nav menu li {
 /* Component classes */
 
 .logo {
+  color: var(--hover-text-color);
   font-size: 20pt;
 
   text-decoration: none;
 }
 
 .nav-link {
+  display: block;
   color: white;
+  padding: 12px 24px;
+
   text-decoration: none;
 }
 
 .nav-link:hover {
-  border-bottom: 1px solid white;
+  /* border-bottom: 1px solid var(--hover-text-color); */
+  color: var(--hover-text-color);
 }
 
 .logo-hamburger-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 16px;
+}
+
+/* Hamburger button styles */
+.ham-btn-container {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-btn {
+  width: 25px;
+  padding: 0;
+
+  background-color: black;
+  border: none;
+}
+
+.hamburger-btn:hover {
+  cursor: pointer;
+}
+
+.hamburger-ingredient-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburger-ingredient-container span {
+  width: 100%;
+  height: 2.5px;
+  background-color: white;
+}
+
+.hamburger-ingredient-container span:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.hamburger-btn:hover .hamburger-ingredient-container span {
+  background-color: var(--hover-text-color);
 }
 
 /* narrow screen breakpoint */
