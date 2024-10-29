@@ -1,3 +1,95 @@
+/* 
+  This CSS sheet follows mobile first development. 
+  Styles above the media queries will be for the mobile version, 
+  and the media queries handle breakpoints.
+*/
+
+:root {
+  /* --font: "Garamond", sans-serif, "Helvetica", sans-serif, "Verdana", sans-serif; */
+  /*  "Brush Script MT", cursive, */
+  --text-font-size: 14pt;
+  --primary-color: #111215;
+  --text-color: white;
+  /* --hover-text-color: blue; */
+}
+
+/* General styles */
+
 * {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+nav {
+  /* border: 3px solid white; */
+  padding: 0;
+}
+
+nav menu {
+  margin: 0;
+  padding: 0;
+  /* border: 3px solid white; */
+}
+
+nav menu li {
+  list-style-type: none;
+}
+
+/* Layout classes */
+
+/* classes named row-[breakpoint] go to column display when reaching that breakpoint. */
+.row-narrow {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Visibility classes */
+
+.hidden {
+  display: none;
+}
+
+/* Component classes */
+
+.logo {
+  font-size: 20pt;
+
+  text-decoration: none;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid white;
+}
+
+.logo-hamburger-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* narrow screen breakpoint */
+@media (min-width: 768px) {
+  .row-narrow {
+    flex-direction: row;
+  }
+
+  .nav-container {
+    justify-content: space-between;
+  }
+
+  .hamburger-btn {
+    display: none;
+  }
 }

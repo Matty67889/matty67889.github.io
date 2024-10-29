@@ -5,25 +5,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Matthew's Personal Website</title>
+  <link rel="stylesheet" href="styles/site.css">
 </head>
 
 <body>
   <nav>
-    <menu>
-      <li>
-        <a href="index.html">Home</a>
-      </li>
-      <!-- <li>
-        <a href="about.html">About</a>
-      </li>
-      <li>
-        <a href="projects.html">Projects</a>
-      </li> -->
-    </menu>
+    <div class="nav-container row-narrow">
+      <div class="logo-hamburger-container">
+        <div>
+          <a href="index.html" class="logo">
+            Matthew
+          </a>
+        </div>
+        <div>
+          <button type="button" class="hamburger-btn" onclick="toggleNavVisibility()">Hamburger</button>
+        </div>
+      </div>
+      <div id="nav-links">
+        <menu class="row-narrow">
+          <li>
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li>
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li>
+            <a href="projects.html" class="nav-link">Projects</a>
+          </li>
+        </menu>
+      </div>
+    </div>
   </nav>
-  <header>
+  <header class="row-narrow">
     <h1>Hi, I'm Matthew</h1>
-    <p></p>
+    <p>
+      A technically aligned invididual interested in using
+      technology to use my skills to make learning easier for
+      people. I've dabbled in a myriad of subjects,
+      including AI, web design, and business.
+    </p>
   </header>
   <main>
     <section>
@@ -88,4 +108,7 @@
       </div>
     </div>
   </footer>
+
+  <!-- Scripts -->
+  <script src="scripts/scripts.js"></script>
 </body>
