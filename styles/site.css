@@ -28,19 +28,16 @@ body {
 }
 
 nav {
-  /* border: 3px solid white; */
   padding: 0;
 }
 
 nav menu {
   margin: 0;
   padding: 0;
-  /* border: 3px solid white; */
 }
 
 nav menu li {
   list-style-type: none;
-  /* border: 1px solid pink; */
 }
 
 /* Layout classes */
@@ -76,6 +73,11 @@ nav menu li {
 
 .nav-link:hover {
   /* border-bottom: 1px solid var(--hover-text-color); */
+  color: var(--hover-text-color);
+}
+
+.nav-links-container .active {
+  /* make current page appear different color on navbar */
   color: var(--hover-text-color);
 }
 
@@ -135,7 +137,11 @@ nav menu li {
     justify-content: space-between;
   }
 
-  .hamburger-btn {
+  .ham-btn-container {
     display: none;
+  }
+
+  .nav-links-container {
+    align-items: center;
   }
 }

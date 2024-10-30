@@ -18,7 +18,7 @@
           </a>
         </div>
         <div class="ham-btn-container">
-          <button type="button" id="ham-btn" class="hamburger-btn" onclick="toggleNavVisibility()">
+          <button type="button" id="ham-btn" class="hamburger-btn" onclick="toggleLinksVisibility()">
             <div class="hamburger-ingredient-container">
               <span></span>
               <span></span>
@@ -27,19 +27,17 @@
           </button>
         </div>
       </div>
-      <div id="nav-links-container">
-        <menu class="row-narrow">
-          <li>
-            <a href="index.html" class="nav-link">Home</a>
-          </li>
-          <li>
-            <a href="about.html" class="nav-link">About</a>
-          </li>
-          <li>
-            <a href="projects.html" class="nav-link">Projects</a>
-          </li>
-        </menu>
-      </div>
+      <menu class="row-narrow nav-links-container" id="nav-links-container">
+        <li>
+          <a href="index.html" class="nav-link active">Home</a>
+        </li>
+        <li>
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+        <li>
+          <a href="projects.html" class="nav-link">Projects</a>
+        </li>
+      </menu>
     </div>
   </nav>
   <header class="row-narrow">
