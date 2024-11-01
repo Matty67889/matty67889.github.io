@@ -232,6 +232,13 @@ footer h1 {
   width: 100%;
 }
 
+.sidenotes {
+  margin-top: 20px;
+
+  display: flex;
+  align-items: center;
+}
+
 @media (min-width: 640px) {
   .project-card {
     max-width: 570px;
