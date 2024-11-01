@@ -11,7 +11,9 @@
   --primary-color: #111215;
   --text-color: white;
   --hover-text-color: rgb(68, 229, 213);
+  --project-card-background-color: #2a2b2b;
 
+  --main-side-padding: 20px;
   --footer-icon-spacing: 20px;
 }
 
@@ -67,6 +69,10 @@ header p {
   max-width: 500px;
 }
 
+main {
+  padding: 0 var(--main-side-padding);
+}
+
 footer {
   padding: 10px 30px;
 }
@@ -84,7 +90,8 @@ footer h1 {
 }
 
 /* classes named row-[breakpoint] go to column display when reaching that breakpoint. */
-.row-narrow {
+.row-narrow,
+.row-wide {
   display: flex;
   flex-direction: column;
 }
@@ -168,6 +175,31 @@ footer h1 {
   background-color: var(--hover-text-color);
 }
 
+/* Project styles */
+.project-card {
+  /* padding: 12px 16px; */
+  background-color: var(--project-card-background-color);
+}
+
+.project-card:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.project-desc-container {
+  /* padding: 12px 16px; */
+}
+
+/* maybe use this for picture, img combos in general? */
+.contained-img-wrapper,
+.contained-img {
+  display: block;
+  width: 100%;
+}
+
+.project-desc-container p {
+  max-width: 500px;
+}
+
 /* Footer image styles */
 .social-icons-container {
   margin: 0;
@@ -199,6 +231,14 @@ footer h1 {
   width: 100%;
 }
 
+@media (min-width: 640px) {
+  .project-card {
+    max-width: 570px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 /* narrow screen breakpoint */
 @media (min-width: 768px) {
   address div {
@@ -228,5 +268,34 @@ footer h1 {
 
   .nav-links-container {
     align-items: center;
+  }
+
+  .project-card {
+    max-width: 100%;
+  }
+
+  .project-desc-container p {
+    max-width: 100%;
+  }
+
+  .project-card {
+    max-width: 710px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 900px) {
+  .row-wide {
+    flex-direction: row;
+  }
+
+  .project-card {
+    max-width: 100%;
+  }
+
+  .project-card-child {
+    width: 50%;
+    flex-grow: 1;
   }
 }
