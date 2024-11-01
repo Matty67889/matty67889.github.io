@@ -29,6 +29,7 @@ body {
 
 nav {
   padding: 0;
+  /* border-bottom: 1px solid white; */
 }
 
 nav menu {
@@ -38,6 +39,33 @@ nav menu {
 
 nav menu li {
   list-style-type: none;
+}
+
+header {
+  /* border: 3px solid pink; */
+  height: 50vh;
+  margin-top: 10vh;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 10px 30px;
+}
+
+header p {
+  margin: 0;
+
+  font-size: 20px;
+}
+
+header h1 {
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  font-size: 40pt;
+}
+
+header p {
+  max-width: 500px;
 }
 
 /* Layout classes */
