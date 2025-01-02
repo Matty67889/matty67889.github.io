@@ -214,6 +214,39 @@ footer h1 {
   max-width: 550px;
 }
 
+.project-skills-container {
+  padding: 20px 20px;
+}
+
+.skill-marker {
+  display: inline-block;
+  border-radius: 10px;
+  padding: 4px 12px;
+
+  color: black;
+  font-family: monospace;
+  font-size: 16pt;
+}
+
+.skill-marker:not(:first-child) {
+  margin-left: 12px;
+}
+
+.python-marker {
+  background-color: rgba(172, 255, 47, 0.84);
+  border: 2px solid greenyellow;
+}
+
+.js-marker {
+  background-color: rgba(255, 166, 0, 0.84);
+  border: 2px solid orange;
+}
+
+.sheets-marker {
+  background-color: rgba(2, 168, 2, 0.84);
+  border: 2px solid rgb(2, 168, 2);
+}
+
 /* Footer image styles */
 .social-icons-container {
   margin: 0;
