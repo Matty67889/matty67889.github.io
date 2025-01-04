@@ -214,6 +214,7 @@ footer h1 {
   max-width: 550px;
 }
 
+/* Project skill markers */
 .project-skills-container {
   padding: 20px 20px;
 }
@@ -245,6 +246,39 @@ footer h1 {
 .sheets-marker {
   background-color: rgba(2, 168, 2, 0.84);
   border: 2px solid rgb(2, 168, 2);
+}
+
+/* Project buttons */
+.project-action-btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 20px 20px;
+}
+
+.btn-link {
+  background-color: transparent;
+  color: white;
+  border: 3px solid white;
+  padding: 10px 12px;
+
+  text-decoration: none;
+  font-family: monospace;
+
+  font-size: 14pt;
+
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.btn-link:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-link:not(:first-child) {
+  margin-top: 10px;
 }
 
 /* Footer image styles */
