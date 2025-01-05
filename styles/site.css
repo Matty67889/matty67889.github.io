@@ -5,7 +5,6 @@
 */
 
 :root {
-  /*  "Brush Script MT", cursive, */
   --text-font-size: 14pt;
   --primary-color: #111215;
   --text-color: white;
@@ -94,9 +93,10 @@ a {
   flex-direction: column;
 }
 
-/* classes named row-[breakpoint] go to column display when reaching that breakpoint. */
+/* classes named row-[breakpoint] go to row display when reaching that breakpoint. */
 .row-narrow,
-.row-wide {
+.row-wide,
+.row-large {
   display: flex;
   flex-direction: column;
 }
@@ -371,10 +371,6 @@ a {
     align-items: center;
   }
 
-  .project-card {
-    max-width: 100%;
-  }
-
   .project-desc-container p {
     max-width: 100%;
   }
@@ -386,17 +382,35 @@ a {
   }
 }
 
+/* wide screen breakpoint */
 @media (min-width: 900px) {
   .row-wide {
     flex-direction: row;
   }
+}
 
-  .project-card {
-    max-width: 100%;
+/* framing width breakpoint */
+@media (min-width: 1150px) {
+  .row-large {
+    flex-direction: row;
   }
 
-  .project-card-child {
-    width: 50%;
-    flex-grow: 1;
+  .frame-wrapper {
+    max-width: 1150px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .project-cards-container {
+    gap: 0 20px;
+  }
+
+  .project-card {
+    max-width: none;
+    margin: 0;
+  }
+
+  .project-card:not(:last-child) {
+    margin-bottom: 0;
   }
 }
