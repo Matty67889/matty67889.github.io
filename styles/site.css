@@ -5,16 +5,17 @@
 */
 
 :root {
-  /* --font: "Garamond", sans-serif, "Helvetica", sans-serif, "Verdana", sans-serif; */
   /*  "Brush Script MT", cursive, */
   --text-font-size: 14pt;
   --primary-color: #111215;
   --text-color: white;
-  --hover-text-color: rgb(68, 229, 213);
+  --color-2: rgb(68, 229, 213);
   --project-card-background-color: #2a2b2b;
 
   --main-side-padding: 20px;
   --footer-icon-spacing: 20px;
+
+  --project-card-side-padding: 40px;
 }
 
 /* General styles */
@@ -29,6 +30,7 @@ body {
 
   background-color: var(--primary-color);
   color: var(--text-color);
+  font-family: 'Trebuchet MS';
 }
 
 nav {
@@ -82,6 +84,10 @@ footer h1 {
   margin-bottom: 25px;
 }
 
+a {
+  color: var(--color-2);
+}
+
 /* Layout classes */
 
 .flex-col {
@@ -105,7 +111,7 @@ footer h1 {
 /* Component classes */
 
 .logo {
-  color: var(--hover-text-color);
+  color: var(--color-2);
   font-size: 20pt;
 
   text-decoration: none;
@@ -121,13 +127,13 @@ footer h1 {
 
 .nav-link:hover {
   /* add this effect later */
-  /* border-bottom: 1px solid var(--hover-text-color); */
-  color: var(--hover-text-color);
+  /* border-bottom: 1px solid var(--color-2); */
+  color: var(--color-2);
 }
 
 .nav-links-container .active {
   /* make current page appear different color on navbar */
-  color: var(--hover-text-color);
+  color: var(--color-2);
 }
 
 .logo-hamburger-container {
@@ -173,12 +179,11 @@ footer h1 {
 }
 
 .hamburger-btn:hover .hamburger-ingredient-container span {
-  background-color: var(--hover-text-color);
+  background-color: var(--color-2);
 }
 
 /* Project styles */
 .project-card {
-  /* padding: 12px 16px; */
   background-color: var(--project-card-background-color);
 }
 
@@ -186,16 +191,19 @@ footer h1 {
   margin-bottom: 40px;
 }
 
-.project-desc-container {
-  /* padding: 12px 16px; */
+.project-card-child {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px var(--project-card-side-padding);
 }
 
-.project-card-child {
-  padding: 20px 30px;
+.project-card-child>*:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .project-img-container {
-  border-bottom: 1px solid white;
+  border-bottom: 3px solid white;
 }
 
 /* maybe use this for picture, img combos in general? */
@@ -205,46 +213,55 @@ footer h1 {
   width: 100%;
 }
 
+.project-desc-container {
+  margin-bottom: 20px;
+}
+
 .project-desc-container h3 {
+  margin: 0 0 22px 0;
   font-size: 20pt;
 }
 
 .project-desc-container p {
+  margin: 0;
   font-size: 14pt;
   max-width: 550px;
 }
 
 /* Project skill markers */
 .project-skills-container {
-  padding: 20px 20px;
+  margin-left: auto;
 }
 
 .skill-marker {
   display: inline-block;
+
   border-radius: 10px;
   padding: 4px 12px;
 
-  color: black;
+  background-color: transparent;
+  color: white;
+
   font-family: monospace;
-  font-size: 16pt;
+  font-size: 12pt;
 }
 
 .skill-marker:not(:first-child) {
-  margin-left: 12px;
+  margin-left: 8px;
 }
 
 .python-marker {
-  background-color: rgba(172, 255, 47, 0.84);
+  /* background-color: rgba(172, 255, 47, 0.84); */
   border: 2px solid greenyellow;
 }
 
 .js-marker {
-  background-color: rgba(255, 166, 0, 0.84);
+  /* background-color: rgba(255, 166, 0, 0.84); */
   border: 2px solid orange;
 }
 
 .sheets-marker {
-  background-color: rgba(2, 168, 2, 0.84);
+  /* background-color: rgba(2, 168, 2, 0.84); */
   border: 2px solid rgb(2, 168, 2);
 }
 
@@ -253,18 +270,16 @@ footer h1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
-  padding: 20px 20px;
 }
 
 .btn-link {
   background-color: transparent;
   color: white;
   border: 3px solid white;
-  padding: 10px 12px;
+  padding: 8px 12px;
 
   text-decoration: none;
-  font-family: monospace;
+  /* font-family: monospace; */
 
   font-size: 14pt;
 
