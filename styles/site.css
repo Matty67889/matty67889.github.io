@@ -182,12 +182,18 @@ a {
 }
 
 /* Project styles */
-.project-card {
-  background-color: var(--project-card-background-color);
+.project-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px 0px;
 }
 
-.project-card:not(:last-child) {
-  margin-bottom: 40px;
+.project-cards-container .row-large {
+  gap: 40px 0px;
+}
+
+.project-card {
+  background-color: var(--project-card-background-color);
 }
 
 .project-card-child {
@@ -250,18 +256,27 @@ a {
 }
 
 .python-marker {
-  /* background-color: rgba(172, 255, 47, 0.84); */
   border: 2px solid greenyellow;
 }
 
 .js-marker {
-  /* background-color: rgba(255, 166, 0, 0.84); */
   border: 2px solid orange;
 }
 
 .sheets-marker {
-  /* background-color: rgba(2, 168, 2, 0.84); */
   border: 2px solid rgb(2, 168, 2);
+}
+
+.jupyter-marker {
+  border: 2px solid #DA5B0B;
+}
+
+.html-marker {
+  border: 2px solid #da0b0b;
+}
+
+.css-marker {
+  border: 2px solid #0bb1da;
 }
 
 /* Project buttons */
@@ -391,23 +406,25 @@ a {
 
 /* framing width breakpoint */
 @media (min-width: 1150px) {
-  .row-large {
-    flex-direction: row;
-  }
-
   .frame-wrapper {
     max-width: 1150px;
     margin-right: auto;
     margin-left: auto;
   }
 
+  .project-cards-container .row-large {
+    flex-direction: row;
+    gap: 0 40px;
+  }
+
   .project-cards-container {
-    gap: 0 20px;
+    gap: 40px 0;
   }
 
   .project-card {
-    max-width: none;
+    max-width: 50%;
     margin: 0;
+    flex-grow: 1;
   }
 
   .project-card:not(:last-child) {
