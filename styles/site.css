@@ -128,8 +128,7 @@ a {
 }
 
 .nav-link:hover {
-  /* add this effect later */
-  /* border-bottom: 1px solid var(--color-2); */
+  border-bottom: 1px solid var(--color-2);
   color: var(--color-2);
 }
 
