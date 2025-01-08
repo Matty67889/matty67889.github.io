@@ -14,7 +14,7 @@
   --main-side-padding: 20px;
   --footer-icon-spacing: 20px;
 
-  --project-card-side-padding: 40px;
+  --project-card-side-padding: 30px;
 }
 
 /* General styles */
@@ -36,12 +36,15 @@ nav {
   padding: 0;
 }
 
-nav menu {
+/* remove list defaults */
+nav menu,
+.project-skills-list {
   margin: 0;
   padding: 0;
 }
 
-nav menu li {
+nav menu li,
+.project-skills-list li {
   list-style-type: none;
 }
 
@@ -200,7 +203,7 @@ a {
   display: flex;
   flex-direction: column;
 
-  padding: 20px var(--project-card-side-padding);
+  padding: 20px var(--project-card-side-padding) 20px;
 }
 
 .project-card-child>*:not(:last-child) {
@@ -238,9 +241,15 @@ a {
   margin-left: auto;
 }
 
+.project-skills-list {
+  /* display: flex; */
+  align-items: flex-start;
+}
+
 .skill-marker {
   display: inline-block;
 
+  margin-left: auto;
   border-radius: 10px;
   padding: 4px 12px;
 
@@ -252,7 +261,7 @@ a {
 }
 
 .skill-marker:not(:first-child) {
-  margin-left: 8px;
+  margin-top: 8px;
 }
 
 .python-marker {
@@ -370,6 +379,11 @@ a {
     margin-left: 15px;
   }
 
+  .skill-marker:not(:first-child) {
+    margin-top: 0;
+    margin-left: 8px;
+  }
+
   .row-narrow {
     flex-direction: row;
   }
@@ -422,7 +436,7 @@ a {
   }
 
   .project-card {
-    max-width: 50%;
+    width: 50%;
     margin: 0;
     flex-grow: 1;
   }
