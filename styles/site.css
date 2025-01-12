@@ -128,7 +128,6 @@ a {
 }
 
 .nav-link:hover {
-  border-bottom: 1px solid var(--color-2);
   color: var(--color-2);
 }
 
@@ -231,8 +230,10 @@ a {
 
 .project-desc-container p {
   margin: 0;
-  font-size: 14pt;
   max-width: 550px;
+
+  color: #d2d2d2;
+  font-size: 14pt;
 }
 
 /* Project skill markers */
@@ -285,6 +286,14 @@ a {
 
 .css-marker {
   border: 2px solid #0bb1da;
+}
+
+.latex-marker {
+  border: 2px solid #dad00b;
+}
+
+.ocaml-marker {
+  border: 2px solid #0b50da;
 }
 
 /* Project buttons */
@@ -376,6 +385,10 @@ a {
 
   address div:last-child {
     margin-left: 15px;
+  }
+
+  .nav-link:hover {
+    border-bottom: 2px solid var(--color-2);
   }
 
   .skill-marker:not(:first-child) {
