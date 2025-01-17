@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matthew's Personal Website</title>
+  <link rel="stylesheet" href="styles/site.css">
+</head>
+
+<body>
+  <nav>
+    <div class="nav-container row-narrow frame-wrapper">
+      <div class="logo-hamburger-container">
+        <div>
+          <a href="index.html" class="logo">
+            Matthew
+          </a>
+        </div>
+        <div class="ham-btn-container">
+          <button type="button" id="ham-btn" class="hamburger-btn" onclick="toggleLinksVisibility()">
+            <div class="hamburger-ingredient-container">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+        </div>
+      </div>
+      <menu class="row-narrow nav-links-container" id="nav-links-container">
+        <li>
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li>
+          <a href="about.html" class="nav-link active">About</a>
+        </li>
+        <li>
+          <a href="projects.html" class="nav-link">Projects</a>
+        </li>
+      </menu>
+    </div>
+  </nav>
+  <header>
+    <div class="header-content-container frame-wrapper row-narrow">
+      <h1>Matthew</h1>
+      <p>
+        Matthew is a determined and driven individual who wants to build technology that makes people's lives easier. He
+        is especially interested
+        in creating software to help people learn and practice skills without having to worry about making their own
+        exercises. He believes that playing games is a great way to reinforce concepts in people's minds and is
+        interested in games in general, so he enjoys playing and developing those as well.
+        <br>
+        <br>
+        When not working with technology, he tries to learn new skills and subjects to be exposed to other types of
+        thinking. He believes that incorporating different patterns of thought into one's main line of work can give
+        birth
+        to interesting new ideas. In his free time, he tries to learn new skills to broaden his worldview.
+      </p>
+    </div>
+    <div><a href="https://www.linkedin.com/in/matthew-mentis-cort-374430203/" class="btn-link">Connect with me on
+        Linkedin!</a></div>
+  </header>
+  <main>
+    <section class="frame-wrapper">
+      <h2>Inspirations</h2>
+      <article>
+        <figure>
+          <!-- Source: https://www.americaontech.org/news/announcing-our-2021-2022-peer-mentors -->
+          <img src="images/peer-mentor-banner.JPG" alt="">
+          <figcaption>
+            Source: <cite><a href="https://www.americaontech.org/news/announcing-our-2021-2022-peer-mentors">America on
+                Tech Peer Mentor Page</a></cite>
+          </figcaption>
+        </figure>
+        <h3><a href="https://www.americaontech.org/">America on Tech</a></h3>
+        <p>
+          America on Tech eased me into the tech world and gave me access to many opportunities, including Bootcamps,
+          Fellowships, and professional development opportunities. I especially enjoyed working for them as a <a
+            href="https://www.americaontech.org/news/announcing-our-2021-2022-peer-mentors">Peer Mentor</a>. Their noble
+          mission has inspired me to look towards how to use coding for the good of the community.
+        </p>
+      </article>
+      <article>
+        <figure>
+          <!-- Source: https://en.wikipedia.org/wiki/File:NDS_BrainTrainingForAdults.jpg -->
+          <img src="images/brain-age-ds-cover.jpg" alt="">
+          <figcaption>
+            Source: <cite><a
+                href="https://en.wikipedia.org/wiki/File:NDS_BrainTrainingForAdults.jpg">Wikipedia</a></cite>, and
+            <cite><a href="https://en.wikipedia.org/wiki/Brain_Age:_Train_Your_Brain_in_Minutes_a_Day!">original
+                article</a></cite>
+          </figcaption>
+        </figure>
+        <h3>Brain Age</h3>
+        <p>
+          I played Brain Age very frequently when I was younger, and I believe it contributed to the academic success I
+          have today. It also serves as a great model for the type of games I want to create in the future: fun
+          minigames that help train your brain.
+        </p>
+      </article>
+      <article>
+        <figure>
+          <!-- Source: https://design.duolingo.com/identity/logos -->
+          <img src="images/duolingo-logo.svg" alt="">
+          <figcaption>
+            Source: <cite><a href="https://design.duolingo.com/identity/logos">Duolingo
+                Logos Page</a></cite>
+          </figcaption>
+        </figure>
+        <h3><a href="https://www.duolingo.com/">Duolingo</a></h3>
+        <p>
+          DuoLingo does a good job at making learning fun by combining studying with participating in fun activities.
+          Their excerises provide good practice for language learners.
+        </p>
+      </article>
+    </section>
+    <section class="frame-wrapper">
+      <h2>Some Highlights</h2>
+      <article class="feature-card">
+        <a href="https://adi.cornell.edu/summer-intern-program/cornell-intern-supports-software-optimization">Student
+          System Support Specialist Work Summary</a>
+        <p>Cornell Retail Services</p>
+        <p>Article by <a href="https://adi.cornell.edu/">Cornell University Alliance for Diversity and Inclusion</a></p>
+      </article>
+      <article class="feature-card">
+        <a href="https://www.youtube.com/watch?v=a9GOIK0LH0w&ab_channel=AmericaOnTech">Innovators and Distruptors
+          Speech</a> (<a href="https://youtu.be/a9GOIK0LH0w?t=2464">41:04</a> - 42:14)
+        <p>America on Tech</p>
+        <p>Brief Speech about America on Tech experience</p>
+      </article>
+      <article class="feature-card">
+        <a href="https://issuu.com/bthsalumni/docs/tt_2021_combined_for_reduced_res_single_page_view">Tech Times</a> (<a
+          href="https://issuu.com/bthsalumni/docs/tt_2021_combined_for_reduced_res_single_page_view/16">pg 16</a> of
+        digital reader)
+        <p>Issuu - Brooklyn Technical High School</p>
+        <p>Magazine Feature</p>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <div class="frame-wrapper">
+      <div class="flex-col">
+        <div>
+          <h1>Contact Me!</h1>
+        </div>
+        <div>
+          <address class="row-narrow">
+            <div>
+              <p>Email: mmentiscort67889@gmail.com</p>
+            </div>
+            <div>
+              <ul class="social-icons-container">
+                <li>
+                  <a href="https://github.com/Matty67889" class="social-icon-link">
+                    <picture class="social-icon-wrapper">
+                      <!-- Source: https://github.com/logos -->
+                      <img src="images/github-mark-white.svg" alt="Github Link" class="social-icon">
+                    </picture>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/matthew-mentis-cort-374430203/" class="social-icon-link">
+                    <picture class="social-icon-wrapper">
+                      <!-- Source: https://brand.linkedin.com/downloads -->
+                      <img src="images/LI-In-Bug.png" alt="Linkedin Link" class="social-icon">
+                    </picture>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </address>
+        </div>
+      </div>
+      <div class="flex-col sidenotes">
+        <small>
+          &copy; 2024 Matthew. All rights reserved.
+        </small>
+        <small>Last updated: January 2025.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts/scripts.js"></script>
+</body>
