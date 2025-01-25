@@ -334,8 +334,23 @@ a {
 }
 
 /* Feature cards */
+.feature-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0px;
+}
+
 .feature-card {
-  border: 3px solid white;
+  max-width: 550px;
+  padding: 15px;
+
+  background-color: var(--project-card-background-color);
+  border-left: 5px solid var(--color-2);
+  /* border-bottom: 1px solid white; */
+}
+
+.feature-card p {
+  margin-bottom: 0;
 }
 
 /* Footer image styles */
