@@ -89,11 +89,28 @@ a {
   color: var(--color-2);
 }
 
+figure {
+  margin: 0;
+}
+
 /* Layout classes */
 
 .flex-col {
   display: flex;
   flex-direction: column;
+}
+
+/* maybe use this for picture, img combos in general? */
+.contained-img-wrapper,
+.contained-img {
+  display: block;
+  width: 100%;
+}
+
+.img-cover {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 /* classes named row-[breakpoint] go to row display when reaching that breakpoint. */
@@ -211,13 +228,6 @@ a {
 
 .project-img-container {
   border-bottom: 3px solid white;
-}
-
-/* maybe use this for picture, img combos in general? */
-.contained-img-wrapper,
-.contained-img {
-  display: block;
-  width: 100%;
 }
 
 .project-desc-container {
@@ -353,6 +363,43 @@ a {
   margin-bottom: 0;
 }
 
+/* Inspiration cards */
+.inspiration-card-container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 40px 0;
+}
+
+.inspiration-card {
+  display: flex;
+  flex-direction: column;
+
+  border: 2px solid rgb(164, 164, 164);
+}
+
+.insp-card-child {
+  padding: 10px;
+}
+
+.inspiration-card figure {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.inspiration-card img {
+  height: 250px;
+}
+
+.insp-card-child .title-link {
+  text-decoration: none;
+}
+
+.insp-card-child .title-link:hover {
+  color: var(--text-color);
+}
+
 /* Footer image styles */
 .social-icons-container {
   margin: 0;
@@ -447,6 +494,15 @@ a {
     max-width: 710px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .inspiration-card {
+    flex-direction: row;
+  }
+
+  .insp-card-child {
+    width: 50%;
+    padding: 15px;
   }
 }
 
