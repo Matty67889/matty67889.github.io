@@ -15,6 +15,7 @@
   --footer-icon-spacing: 20px;
 
   --project-card-side-padding: 30px;
+  --inspiration-card-padding: 15px;
 }
 
 /* General styles */
@@ -356,7 +357,6 @@ figure {
 
   background-color: var(--project-card-background-color);
   border-left: 5px solid var(--color-2);
-  /* border-bottom: 1px solid white; */
 }
 
 .feature-card p {
@@ -379,7 +379,7 @@ figure {
 }
 
 .insp-card-child {
-  padding: 10px;
+  padding: var(--inspiration-card-padding);
 }
 
 .inspiration-card figure {
@@ -394,6 +394,14 @@ figure {
 
 .insp-card-child .title-link {
   text-decoration: none;
+}
+
+.insp-card-child h3 {
+  margin: 0;
+}
+
+.insp-desc-wrapper p {
+  margin-bottom: 0;
 }
 
 .insp-card-child .title-link:hover {
@@ -502,7 +510,7 @@ figure {
 
   .insp-card-child {
     width: 50%;
-    padding: 15px;
+    padding: var(--inspiration-card-padding);
   }
 }
 
