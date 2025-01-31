@@ -53,7 +53,7 @@ header {
   min-height: 50vh;
   margin-top: 10vh;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   padding: 10px 30px;
 }
 
@@ -245,7 +245,7 @@ figure {
   max-width: 550px;
 
   color: #d2d2d2;
-  font-size: 14pt;
+  font-size: var(--text-font-size);
 }
 
 /* Project skill markers */
@@ -325,7 +325,7 @@ figure {
 
   text-decoration: none;
 
-  font-size: 14pt;
+  font-size: var(--text-font-size);
 
   transition-duration: 0.4s;
   cursor: pointer;
@@ -342,6 +342,30 @@ figure {
 
 .project-section-action-container {
   margin-top: 40px;
+}
+
+/* About styles */
+
+.about-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.action-btn-container {
+  margin-top: 20px;
+}
+
+.role-title-text {
+  font-size: 20pt;
+  color: #d2d2d2;
+}
+
+.about-header-txt h1 {
+  margin: 0;
+}
+
+.about-header-txt {
+  margin-bottom: 20px;
 }
 
 /* Feature cards */
@@ -398,10 +422,12 @@ figure {
 
 .insp-card-child h3 {
   margin: 0;
+  font-size: 20pt;
 }
 
 .insp-desc-wrapper p {
   margin-bottom: 0;
+  font-size: var(--text-font-size);
 }
 
 .insp-card-child .title-link:hover {
@@ -511,6 +537,14 @@ figure {
   .insp-card-child {
     width: 50%;
     padding: var(--inspiration-card-padding);
+  }
+
+  .header-content-container>* {
+    padding: 10px;
+  }
+
+  .about-header-txt {
+    margin-bottom: 0;
   }
 }
 
