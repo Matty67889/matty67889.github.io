@@ -50,10 +50,9 @@ nav menu li,
 }
 
 header {
-  min-height: 50vh;
-  margin-top: 10vh;
+  min-height: 35vh;
+  margin-top: 5vh;
   display: flex;
-  /* align-items: center; */
   padding: 10px 30px;
 }
 
@@ -101,7 +100,6 @@ figure {
   flex-direction: column;
 }
 
-/* maybe use this for picture, img combos in general? */
 .contained-img-wrapper,
 .contained-img {
   display: block;
